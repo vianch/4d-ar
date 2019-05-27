@@ -5652,12 +5652,12 @@ ARjs.Profile.prototype.reset = function () {
 	}
 
 	this.contextParameters = {
-		cameraParametersUrl: THREEx.ArToolkitContext.baseURL + 'data/data/camera_para.dat',
+		cameraParametersUrl: 'https://vianch.github.io/4d-ar/data/data/camera_para.dat',
 		detectionMode: 'mono',
 	}
 	this.defaultMarkerParameters = {
 		type : 'pattern',
-		patternUrl : THREEx.ArToolkitContext.baseURL + '../data/data/patt.hiro',
+		patternUrl : 'https://vianch.github.io/4d-ar/data/patt.hiro',
 		changeMatrixMode: 'modelViewMatrix',
 	}
 	return this
