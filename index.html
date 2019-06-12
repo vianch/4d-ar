@@ -5,7 +5,7 @@
 <script src="js/lib/aframe-extras.loaders.min.js"></script>
 <script src="js/lib/inflate.min.js"></script>
 <script>
-THREEx.ArToolkitContext.baseURL = "https://vianch.github.io/4d-ar/";
+THREEx.ArToolkitContext.baseURL = "https://vianch.github.io/4d-ar-vertical";
 </script>
 <style>
 .a-enter-vr-button {
@@ -13,19 +13,20 @@ THREEx.ArToolkitContext.baseURL = "https://vianch.github.io/4d-ar/";
 }
 </style>
 <body style='margin : 0px; overflow: hidden;'>
-        <a-scene arjs="debugUIEnabled: false;">
-          <!-- handle marker with your own pattern -->
-          <a-marker type='pattern' url='data/pattern-4d.patt'>
-            <a-entity
-            scale="0.01 0.01 0.01"
-            fbx-model="src: url(data/4DInnovation_V07.FBX);"
-            animation-mixer="loop: repeat">
-            </a-entity>
-          </a-marker>
-
-         
-          <!-- add a simple camera -->
-          <a-entity camera></a-entity>
-        </a-scene>
-      </body>
+  <a-scene arjs="debugUIEnabled: false;">
+      <!-- handle marker with your own pattern -->
+      <a-marker type='pattern' url='data/pattern-4d.patt'>
+          <a-entity
+                  scale="0.035 0.035 0.035"
+                  rotation="0 0 0"
+                  fbx-model="src: url(data/4DInnovation_V07.FBX);"
+                  animation-mixer="loop: repeat">
+          </a-entity>
+      </a-marker>
+  
+  
+      <!-- add a simple camera -->
+      <a-entity camera></a-entity>
+  </a-scene>
+  </body>
 </html>
